@@ -114,7 +114,7 @@ int main(int argc, char* argv[])
 
     const char* query = "SELECT * FROM monthly where timestamp > (UNIX_TIMESTAMP() - 86400);";
 
-    saveQueryToCSV("localhost", "root", "root", "main_db", query, path);
+    saveQueryToCSV("192.168.1.100", "root", "root", "main_db", query, path);
 
     return 0;
 
